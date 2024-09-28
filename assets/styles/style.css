@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+}
+
+html {
+    /* Gradiente linear em tons claros */
+    background: linear-gradient(#e66465, #9198e5);
+    
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+img {
+    height: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+.input-task {
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+
+
+}
+
+.add-task {
+    border-radius: 10px ;
+    background-color: #003329;
+    color: #ffffff;
+    height: 40px;
+    border: none;
+    font-size: 17px;
+    padding: 0 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.add-task:hover {
+    opacity: 0.8;
+}
+
+.add-task:active {
+    opacity: 0.6;
+}
+.container {
+    width: 500px;
+    margin: 100px auto 0;
+    border-radius: 15px;
+    background-color: grey;
+    padding: 20px;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    }
+
+.task:hover img {
+    opacity: 1;
+
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
